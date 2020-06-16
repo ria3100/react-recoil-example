@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "removeComments": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "noImplicitAny": false,
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "include": [
+    "src"
+  ]
+}
