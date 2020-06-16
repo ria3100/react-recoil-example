@@ -1,12 +1,14 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import { RecoilRoot } from 'recoil'
 
-import Foo from '~/foo'
+import { TodoList } from '~/components/TodoList'
 
 ReactDOM.render(
-  <div>
-    Hello world!!!!!!!!!!!!!!
-    <Foo />
-  </div>,
+  <>
+    <RecoilRoot>
+      <TodoList />
+    </RecoilRoot>
+  </>,
   document.getElementById('root')
 )
