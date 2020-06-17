@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useRecoilValue } from 'recoil'
 
-import { filteredTodoListState } from '~/recoil/todoList'
+import { filteredTodoListState } from '~/recoil/selectors'
 
 import {
   TodoListStats,

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useSetRecoilState } from 'recoil'
 
-import { todoListState } from '~/recoil/todoList'
+import { todoListState } from '~/recoil/atoms'
 
 // utility for creating unique Id
 let id = 0

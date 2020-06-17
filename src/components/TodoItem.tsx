@@ -1,7 +1,15 @@
 import * as React from 'react'
 import { useRecoilState } from 'recoil'
 
-import { todoListState } from '~/recoil/todoList'
+import { todoListState } from '~/recoil/atoms'
+
+const replaceItemAtIndex = (arr, index, newValue) => {
+  return [...arr.slice(0, index), newValue, ...arr.slice(index + 1)]
+}
+
+const removeItemAtIndex = (arr, index) => {
+  return [...arr.slice(0, index), ...arr.slice(index + 1)]
+}
 
 export const TodoItem = ({ item }) => {
   const [todoList, setTodoList] = useRecoilState(todoListState)
@@ -42,12 +50,4 @@ export const TodoItem = ({ item }) => {
       <button onClick={deleteItem}>X</button>
     </div>
   )
-}
-
-function replaceItemAtIndex(arr, index, newValue) {
-  return [...arr.slice(0, index), newValue, ...arr.slice(index + 1)]
-}
-
-function removeItemAtIndex(arr, index) {
-  return [...arr.slice(0, index), ...arr.slice(index + 1)]
 }

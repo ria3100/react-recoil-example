@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useRecoilValue } from 'recoil'
 
-import { todoListStatsState } from '~/recoil/todoList'
+import { todoListStatsState } from '~/recoil/selectors'
 
 export const TodoListStats = () => {
   const {

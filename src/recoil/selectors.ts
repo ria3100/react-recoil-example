@@ -1,14 +1,6 @@
-import { atom, selector } from 'recoil'
+import { selector } from 'recoil'
 
-export const todoListState = atom({
-  key: 'todoListState',
-  default: [],
-})
-
-export const todoListFilterState = atom({
-  key: 'todoListFilterState',
-  default: 'Show All',
-})
+import { todoListState, todoListFilterState } from '~/recoil/atoms'
 
 export const filteredTodoListState = selector({
   key: 'filteredTodoListState',
